@@ -1,0 +1,18 @@
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+
+body
+{
+	margin: 60px 20px 20px 60px;
+	width: 80%;
+	text-align: center;
+
+	background: #f5f5f5;
+	color: #67727A;
+	font-family: 'Helvetica';
+
+}
