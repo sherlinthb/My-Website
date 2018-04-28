@@ -1,4 +1,5 @@
 body,html{
+	width:100%;
 	height:100%;
 	margin:0;
 	font-size:16px;
@@ -7,6 +8,25 @@ body,html{
 	line-height: 200%;
 	color:#667;
 	
+}
+
+html{
+	box-sizing:border-box;
+}
+
+img{
+
+	max-width:100%;
+}
+
+.nav,.navbar-nav, .navbar-right{
+	margin: 0 0 0 0;
+}
+
+.testgrid{
+	margin-top:50px;
+
+	color:#ff2f00;
 }
 
 
@@ -25,6 +45,7 @@ body,html{
 }
 
 .pimg1{
+	height: 50%;
 	background-image:url('../img/adventureimg.jpeg');
 	min-height:100%;
 	line-height: 80px;
@@ -45,13 +66,23 @@ body,html{
 	
 }
 
-.section{
+.h1title{
 	text-align:center;
-	padding: 10px 30% 5px 30%;
+	margin-bottom:100px;
+	margin-left:150px;
+	
+
+}
+
+
+.section{
+	text-align:left;
+	padding: 10px 20% 70px 10%;
 	
 }
 
 .section-light{
+	
 	background-color: #f4f4f4;
 	color:#667;
 }
@@ -62,37 +93,117 @@ body,html{
 	color:#ddd;
 }
 .container{
-	width: 10px;
+	width: 100%;
 	
 }
 .container{
 	text-align: center;
 	
-	padding: 20px;
+	padding: 0 0 0 0;
 }
-.skillscontainer{
-	display:grid;
-	grid-template-columns: 40% 30% 20%;
-}
+
 .containerimage{
 	text-align: center;
 	
 }
-.projectwrapper{
-	display:grid;
-	grid-template-columns: 100% 100% ;
-	grid-gap: 5em;
-	margin-left: 5px;
-	margin-right: 5px;
-	width:50%;
-	
-	
+.grid-container{
+ 	text-align:center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:10px;
+}
+
+.grid-container2{
+ 	text-align:center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:10px;
+}
+
+
+.bordersection{
+	margin-top:50px;
+	margin-left:80px;
+ 	padding-left:50px;
+ 	margin-bottom: 50px;
+	text-align:center;
+	border-bottom:5px solid #ddd;
+}
+
+
+
+.website1{
+
+	width:90%;
+	height:70%;
 	
 }
 
+.websitelink:hover{
+
+	border:3px solid #fff;
+	cursor:pointer;
+}
+.website1 p{
+
+	float:left;
+	margin: 0 0px 70px 0px;
+
+}
+
+
+.website2{
+
+	width:90%;
+	height:70%;
+	
+}
+.website2 p{
+
+	float:left;
+	margin: 0 0px 70px 0px;
+
+
+}
+
+.website3{
+
+	width:90%;
+	height:70%;
+	
+}
+
+.website4{
+	
+	width:90%;
+	height:70%;
+
+}
+
+.website5{
+	
+	width:90%;
+	height:500px;
+
+}
+
+
+.website3 p{
+
+	float:left;
+	margin: 0 0px 70px 0px;
+}
+
+.website4 p{
+	text-align:left;
+	float:left;
+	margin: 0 0px 70px 0px;
+}
+
+
 .ptext{
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	width: 100%;
 	text-align: center;
 	color:#000;
@@ -102,8 +213,14 @@ body,html{
 	text-transform:uppercase;
 }
 
+p .intro{
+	font-size:32px;
+	font-weight: 300;
+	margin:0 100% 0 0;
+}
+
 .ptext .border{
-	background-color:#111;
+	background-color:#111; 
 	color:#fff;
 	padding:20px;
 }
@@ -112,8 +229,45 @@ body,html{
 	background-color:transparent;
 }
 
-@media(max-width:568px){
+@media(max-width:700px){
 	.pimg1, .pimg2, .pimg3{	
 		background-attachment: scroll;	
 	}
+	
+	.h1title{
+		margin-left:0px;
+	}
+	
+	
+	.ptext{
+		font-size:18px;
+	}
+	
+	.ptext .border{
+		padding:5px;
+	}
+	
+	.grid-container{
+		text-align:center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap:5px;
+	}
+	
+	.bordersection{
+
+		margin-bottom: 50px;
+		text-align:center;
+		border-bottom:5px solid #ddd;
+}
+	
+	.grid-container2{
+		margin-left:0px;
+		padding-left:0px;
+		text-align:center;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap:5px;
+	}
+	
 }
